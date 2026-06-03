@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RoboSim 3D | Industrial Kinematics</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <div id="canvas-container"></div>
+    
+    <div id="fps-counter" class="fps-hud">FPS: --</div>
+
+    <div class="graph-container">
+        <div class="label" style="margin-bottom: 6px;">Kinematic Velocity Profile (Live)</div>
+        <canvas id="telemetryGraph" width="260" height="100"></canvas>
+    </div>
+
+    <div class="control-panel">
+        <div class="header-container">
+            <div class="brand">ROBOSIM <span class="accent-text">3D</span></div>
+            <div class="sub-brand">INDUSTRIAL KINEMATICS ENGINE</div>
+        </div>
+        <div class="status-group">
+            <div class="status-item"><span class="label">Base</span><span id="angleBaseVal" class="value">0°</span></div>
+            <div class="status-item"><span class="label">Shoulder</span><span id="angleShoulderVal" class="value">0°</span></div>
+            <div class="status-item"><span class="label">Elbow</span><span id="angleElbowVal" class="value">0°</span></div>
+            <div class="status-item"><span class="label">X-Axis</span><span id="posX" class="value">0</span></div>
+            <div class="status-item"><span class="label">Y-Axis</span><span id="posY" class="value">0</span></div>
+            <div class="status-item"><span class="label">Z-Axis</span><span id="posZ" class="value">0</span></div>
+        </div>
+        <button id="recordBtn" class="btn">Record Path</button>
+        <button id="clearBtn" class="btn btn-secondary">Clear Engine</button>
+        <div class="playback-controls">
+            <button id="slowMoBtn" class="btn-control">0.5x</button>
+            <button id="normalBtn" class="btn-control active">1.0x</button>
+            <button id="timeLapseBtn" class="btn-control">3.0x</button>
+        </div>
+        
+        <button id="themeToggleBtn" class="btn-theme-toggle">Switch Environment Theme</button>
+
+        <div class="telemetry-panel">
+            <div class="label">Live Telemetry</div>
+            <div id="telemetry-log" class="log">> SYSTEM READY</div>
+        </div>
+        <div class="footer-attribution">
+            DEVELOPED BY <span class="highlight">NABIL KHONDAKER AHMAD</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
