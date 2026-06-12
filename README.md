@@ -1,4 +1,4 @@
-# RoboSim 3D: Industrial Kinematics Engine
+<img width="1058" height="176" src="RoboSIM.png">
 
 RoboSim 3D is a hardware-accelerated 3D robotic arm simulation built from scratch using vanilla JavaScript and **Three.js**. It implements real-time **Inverse Kinematics (IK)** matrix math to calculate multi-joint actuator angles instantly based on cursor tracking coordinates. 
 
