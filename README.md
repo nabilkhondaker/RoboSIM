@@ -7,7 +7,7 @@ The simulation layer is built to mimic real industrial automation control units,
 ---
 
 <details>
-<summary>Contents</summary>
+<summary><b>Contents</b></summary>
 
 - [✨ Key Features](#-key-features)
 - [📁 Project Structure](#project-structure)
