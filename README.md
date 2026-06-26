@@ -6,6 +6,18 @@ The simulation layer is built to mimic real industrial automation control units,
 
 ---
 
+<details>
+<summary>Contents</summary>
+
+- [✨ Key Features](#-key-features)
+- [📁 Project Structure](#project-structure)
+- [🛠️ Tech Stack](#%EF%B8%8F-tech-stack)
+- [⚙️ Quick Start](#%EF%B8%8F-quick-start)
+
+</details>
+
+---
+
 ## ✨ Key Features
 
 * **Real-Time Inverse Kinematics (IK) Solver:** You don't manual control each joint. The engine takes your 3D target coordinates ($X, Y, Z$) from the viewport and handles the trigonometric cosine/tangent matrix routing to position the base, shoulder, and elbow segments dynamically.
